@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,17 +24,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nn9-U0-QbR">
-                                <rect key="frame" x="126" y="421" width="141" height="67"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="141" id="hZi-eT-Age"/>
-                                    <constraint firstAttribute="height" constant="35" id="jY6-AH-c9z"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="person.crop.circle.dashed" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VDm-QB-qG5">
-                                <rect key="frame" x="137" y="676" width="240" height="126.66666666666663"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="person.crop.circle.dashed" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VDm-QB-qG5">
+                                <rect key="frame" x="76" y="573" width="240" height="126.66666666666663"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="XaD-hh-Dcy"/>
                                     <constraint firstAttribute="height" constant="128" id="d0R-FE-m8p"/>
@@ -41,12 +33,20 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="j00-xT-Bnm"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nn9-U0-QbR">
+                                <rect key="frame" x="318" y="409" width="75" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="ZB0-1D-rRZ"/>
+                                    <constraint firstAttribute="height" constant="35" id="q7s-rl-3iG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Nn9-U0-QbR" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Me8-vd-vZS"/>
-                            <constraint firstItem="Nn9-U0-QbR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ihD-QH-Lu0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nn9-U0-QbR" secondAttribute="trailing" constant="126" id="hXj-Jv-bv0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VDm-QB-qG5" secondAttribute="bottom" constant="15" id="mqC-BF-gss"/>
                         </constraints>
                     </view>

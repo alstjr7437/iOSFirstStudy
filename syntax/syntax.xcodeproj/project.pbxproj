@@ -1,0 +1,78 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXFileReference section */
+		1204FF052B4E8DED00ABE5A8 /* syntax3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = syntax3.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1204FF062B4E958C00ABE5A8 /* diceGame.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = diceGame.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		12BAB52D2B47A44A00F48ADE /* syntax2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = syntax2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		12BAB5262B47A43600F48ADE = {
+			isa = PBXGroup;
+			children = (
+				1204FF062B4E958C00ABE5A8 /* diceGame.playground */,
+				1204FF052B4E8DED00ABE5A8 /* syntax3.playground */,
+				12BAB52D2B47A44A00F48ADE /* syntax2.playground */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		12BAB5272B47A43600F48ADE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1510;
+			};
+			buildConfigurationList = 12BAB52A2B47A43600F48ADE /* Build configuration list for PBXProject "syntax" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12BAB5262B47A43600F48ADE;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		12BAB52B2B47A43600F48ADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		12BAB52C2B47A43600F48ADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12BAB52A2B47A43600F48ADE /* Build configuration list for PBXProject "syntax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12BAB52B2B47A43600F48ADE /* Debug */,
+				12BAB52C2B47A43600F48ADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12BAB5272B47A43600F48ADE /* Project object */;
+}
