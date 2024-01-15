@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9E230BA7-B2E4-49A5-966A-DF5E64341BBE"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E8E2737-A82A-488F-B073-347440D94058"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChatList/ChatListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3E8E2737-A82A-488F-B073-347440D94058 - fa7442056b2a465b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChatList.ChatListViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "ChatList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alstjr/Desktop/Git/IosFirstStudy/ChatList/ChatList/ChatListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "556">
+               </Location>
+               <Location
+                  uuid = "3E8E2737-A82A-488F-B073-347440D94058 - ce9be84342be4308"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (ChatList.Chat, ChatList.Chat) -&gt; Swift.Bool in ChatList.ChatListViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "ChatList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alstjr/Desktop/Git/IosFirstStudy/ChatList/ChatList/ChatListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

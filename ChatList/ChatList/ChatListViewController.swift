@@ -10,7 +10,7 @@ import UIKit
 class ChatListViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    let chatList: [Chat] = Chat.list
+    var chatList: [Chat] = Chat.list
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,11 @@ class ChatListViewController: UIViewController {
         collectionView.dataSource = self
         // Layout
         collectionView.delegate = self
+        
+        // 날짜 정렬을 위한 코드
+        chatList = chatList.sorted (by:{ chat1, chat2 in
+            return chat1.date > chat2.date
+        })
     }
 }
 
@@ -37,11 +42,8 @@ extension ChatListViewController: UICollectionViewDataSource{
         let chat = chatList[indexPath.item]
         cell.configure(chat)
         
-        
         return cell
-        
     }
-    
 }
 
 extension ChatListViewController: UICollectionViewDelegateFlowLayout {

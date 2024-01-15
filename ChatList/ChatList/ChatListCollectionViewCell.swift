@@ -13,16 +13,22 @@ class ChatListCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var chatLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    
+    // 이미지 설정
     override func awakeFromNib() {
         super.awakeFromNib()
         thumbnail.layer.cornerRadius = 10
     }
+    
+    // 데이터 셋팅
     func configure(_ chat: Chat){
         thumbnail.image = UIImage(named: chat.name)
         nameLabel.text = chat.name
         chatLabel.text = chat.chat
         dateLabel.text = formattedDateString(dateString: chat.date)
     }
+    
+    // 날짜 형식 변경 함수
     func formattedDateString(dateString: String) -> String{
         // 2022-04-01 -> 4/1
         let formatter = DateFormatter()
@@ -35,6 +41,5 @@ class ChatListCollectionViewCell: UICollectionViewCell {
         }else {
             return ""
         }
-        
     }
 }
