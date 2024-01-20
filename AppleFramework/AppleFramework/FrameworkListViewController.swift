@@ -28,6 +28,7 @@ class FrameworkListViewController: UIViewController {
             flowlayout.estimatedItemSize = .zero
         }
         
+        // collectionView 위 20 왼쪽, 오른쪽 16의 공간 주기
         collectionView.contentInset = UIEdgeInsets(top: 20, left: 16, bottom: 0, right: 16)
     }
 }
@@ -56,7 +57,7 @@ extension FrameworkListViewController: UICollectionViewDelegateFlowLayout{
         let width = (collectionView.bounds.width - interItemSpacing * 2 - padding * 2) / 3
         let height = width * 1.5
         return CGSize(width: width, height: height)
-        
+//        
 //        // 2열일때 계산
 //        let width = (collectionView.bounds.width - interItemSpacing * 1 - padding * 2) / 2
 //        let height = width * 1.5
