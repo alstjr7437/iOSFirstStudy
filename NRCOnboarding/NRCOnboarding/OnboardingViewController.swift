@@ -28,7 +28,6 @@ class OnboardingViewController: UIViewController {
     }
 }
 
-
 extension OnboardingViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return messages.count
@@ -58,9 +57,9 @@ extension OnboardingViewController: UICollectionViewDelegateFlowLayout{
 }
 
 extension OnboardingViewController: UIScrollViewDelegate{
-//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        print(scrollView.contentOffset.x / self.collectionView.bounds.width)
-//    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print(scrollView.contentOffset.x)
+    }
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         print("멈춤")
         let index = Int(scrollView.contentOffset.x / self.collectionView.bounds.width)
