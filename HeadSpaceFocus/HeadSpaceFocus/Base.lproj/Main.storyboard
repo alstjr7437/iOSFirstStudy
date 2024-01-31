@@ -42,6 +42,12 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Boost your performance with mindfulness. Manage emotions and expections while rehabilitating" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zov-5p-7Ib">
+                                                    <rect key="frame" x="20" y="62.5" width="203" height="81.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1EL-kQ-3nO">
                                                     <rect key="frame" x="264" y="-1" width="150" height="157.5"/>
                                                     <constraints>
@@ -49,12 +55,6 @@
                                                     </constraints>
                                                     <imageReference key="image" image="cloud.heavyrain.fill" catalog="system" renderingMode="original"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Boost your performance with mindfulness. Manage emotions and expections while rehabilitating" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zov-5p-7Ib">
-                                                    <rect key="frame" x="20" y="62.5" width="203" height="81.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="1EL-kQ-3nO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JvT-dM-PqX" secondAttribute="trailing" constant="30" id="21w-U3-Ulg"/>
@@ -72,7 +72,7 @@
                                         <size key="customSize" width="414" height="156"/>
                                         <connections>
                                             <outlet property="descriptionLabel" destination="Zov-5p-7Ib" id="LUk-73-9E1"/>
-                                            <outlet property="thumnailImgView" destination="1EL-kQ-3nO" id="P4J-nK-FF5"/>
+                                            <outlet property="thumbnailImgView" destination="1EL-kQ-3nO" id="P4J-nK-FF5"/>
                                             <outlet property="titleLabel" destination="JvT-dM-PqX" id="ciR-Ge-CCh"/>
                                         </connections>
                                     </collectionViewCell>

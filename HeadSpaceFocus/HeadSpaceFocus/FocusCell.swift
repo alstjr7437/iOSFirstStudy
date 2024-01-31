@@ -10,7 +10,7 @@ import UIKit
 class FocusCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var thumnailImgView: UIImageView!
+    @IBOutlet weak var thumbnailImgView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,7 +21,7 @@ class FocusCell: UICollectionViewCell {
     func configure(_ item: Focus){
         titleLabel.text = item.title
         descriptionLabel.text = item.description
-        thumnailImgView.image = UIImage(systemName: item.imageName)?.withRenderingMode(.alwaysOriginal)
+        thumbnailImgView.image = UIImage(systemName: item.imageName)?.withRenderingMode(.alwaysOriginal)
         
     }
 }
