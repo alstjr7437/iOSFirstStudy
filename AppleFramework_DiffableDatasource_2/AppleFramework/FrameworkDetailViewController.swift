@@ -29,7 +29,6 @@ class FrameworkDetailViewController: UIViewController {
     
 
     @IBAction func learnMoreTapped(_ sender: Any) {
-        
         guard let url = URL(string: framework.urlString) else {
             return
         }
