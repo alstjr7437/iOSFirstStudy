@@ -67,6 +67,7 @@ passwordPublisher.send("verystrongpassword")
 // 타입이 같아야 머지가 됨 아니면 위에 처럼 튜플형식으로
 let publisher1 = [1,2,3,4,5].publisher
 let publisher2 = [300,400,500].publisher
+//let publisher2 = ["300","400","500"].publisher
 
 let mergePublisherSubscrition = Publishers.Merge(publisher1, publisher2)
 //    .print("[Debug]")

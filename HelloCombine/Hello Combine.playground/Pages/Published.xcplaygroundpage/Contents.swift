@@ -5,8 +5,8 @@ import UIKit
 import Combine
 
 final class SomeViewModel{
-    @Published var name: String = "Jack"
-    var age: Int = 20
+    @Published var name: String = "Kim"
+    var age: Int = 25
 }
 
 final class Label{
@@ -20,10 +20,10 @@ print("text : \(label.text)")
 vm.$name.assign(to: \.text, on: label)
 print("text : \(label.text)")
 
-vm.name = "Jason"
+vm.name = "Min"
 print("text : \(label.text)")
 
-vm.name = "Hoo"
+vm.name = "Seok"
 print("text : \(label.text)")
 
 label.text = "\(vm.age)"

@@ -4,7 +4,6 @@ import Foundation
 import Combine
 
 // Publisher & Subscriber
-
 let just = Just(1000)
 let subscription = just.sink { value in
         print("Recevied Value: \(value)")
@@ -16,6 +15,10 @@ let arrayPublisher = [1,3,5,7,9].publisher
 let subscription2 = arrayPublisher.sink {value in
     print("Recevied Value: \(value)")
 }
+// Recevied Value: 1
+// Recevied Value: 3
+// Recevied Value: 5
+// ..
 
 class MyClass {
     var property: Int = 0{
@@ -27,6 +30,7 @@ class MyClass {
 
 // arrayPublisher가 배출 될때 마다 property에 값을 셋팅
 let object = MyClass()
+object.property = 3
 let subscription3 = arrayPublisher.assign(to: \.property, on: object)
 print("Final Value: \(object.property)")
 
