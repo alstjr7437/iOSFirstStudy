@@ -20,7 +20,7 @@ struct GithubProfile: Codable {
         case avatarUrl = "avatar_url"
         case htmlUrl = "html_url"
         case followers
-        case following      
+        case following
     }
 }
 
@@ -57,11 +57,12 @@ final class NetworkService {
 let networkService = NetworkService(configuration: .default)
 
 let subscription = networkService
-    .fetchProfile(userName: "alstjr7437")
+    .fetchProfile(userName: "alstjr7437f")
     .receive(on: RunLoop.main)
     .print()
+    .retry(3)
     .sink { error in
-        print("error: \(error)")
+        print("completion: \(error)")
     } receiveValue: { profile in
         print("profile: \(profile)")
     }

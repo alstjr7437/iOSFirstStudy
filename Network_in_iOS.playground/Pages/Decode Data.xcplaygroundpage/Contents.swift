@@ -36,7 +36,7 @@ let task = session.dataTask(with: url) { data, response, error in
     }
     
     guard let data = data else { return }
-    // data -> GithubProfile
+    // data -> GithubProfiledo 
     
     do {
         let decoder = JSONDecoder()
@@ -46,8 +46,6 @@ let task = session.dataTask(with: url) { data, response, error in
         print("[error] : \(error)")
     }
     
-    let result = String(data: data, encoding: .utf8)
-//    print(result)`
 }
 
 task.resume()
